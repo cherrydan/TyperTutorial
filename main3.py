@@ -31,12 +31,14 @@ def main(name: str,
         elif age in range(13, 21):
             print(f"Привет, {name} {lastname}!")
             print("[bold yellow]Ты подросток[/bold yellow]")
-        elif age in range(21, 100):
+        elif age in range(21, 60):
             print(f"Добрый день, {name} {lastname}!")
             print("[bold red]Вы уже взрослый человек![/bold red]")
-
-
-
+        elif age in range(60, 100):
+            print(f"Добрый день, {name} {lastname}!")
+            print("[bold red]Вы уже пожилой человек![/bold red]")
+        else:
+            print(f"[bold red]Шанс прожить {age} лет слишком мал в наше время![/bold red]")
 
     else:
         print(f'Привет, {name} {lastname}!')
